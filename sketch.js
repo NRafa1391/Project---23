@@ -32,7 +32,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5, {restitution:2, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5, {restitution:0, isStatic:true});
 	World.add(world, packageBody);
 
 	dropZone1Body = Bodies.rectangle(width/2, 653, 200, 20, {isStatic:true});
